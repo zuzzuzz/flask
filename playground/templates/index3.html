@@ -1,0 +1,37 @@
+
+<!-- BONUS CHALLENGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Playground Core Assignment</title>
+
+    <style>
+        .wrapper{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box{
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body> 
+    <div class="wrapper">
+        {% for i in range(0,num) %}
+        <div class="box" style="background-color: {{color}};"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>
