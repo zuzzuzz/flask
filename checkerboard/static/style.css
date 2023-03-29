@@ -1,0 +1,17 @@
+div {
+    width: 380px;
+    height: 380px;
+    background: 
+    repeating-linear-gradient(to right,transparent,transparent 50px,white 50px,white 55px),
+    repeating-linear-gradient(to bottom,transparent,transparent 50px, white 50px,white 55px),
+    linear-gradient(45deg, pink, skyblue);
+}
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+}
