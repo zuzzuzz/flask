@@ -6,8 +6,6 @@ app.secret_key='this is a secret'
 def index(): 
     if 'count' not in session:
         session['count'] = 0
-    else: 
-        session['count'] += 1 
     return render_template('index.html')
 
 @app.route('/addOne', methods=['POST'])
